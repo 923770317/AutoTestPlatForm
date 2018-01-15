@@ -17,8 +17,11 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.conf.urls import include
 import RequestSystem
+from RequestSystem import urls
+from RequestSystem import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^request/',include(RequestSystem.urls)),
+    url(r'^request/',include(RequestSystem.urls),),
+
 ]
